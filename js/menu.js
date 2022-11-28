@@ -7,15 +7,15 @@ $(function(){
 
     // 메뉴 보여주는 효과
     function menuShow(){
-        $(this).find('.sub_menu').stop().animate({'opacity':1},500,"easeOutCubic");
-        $subHeight = $(this).find('.sub_menu').outerHeight();
+        $(this).find('.nav__menu__content').stop().animate({'opacity':1},500,"easeOutCubic");
+        $subHeight = $(this).find('.nav__menu__content').outerHeight();
         $header.stop().animate({'height':98+$subHeight+'px'},700,"easeOutCubic");
     }
 
 
     // 메뉴 글씨만 사라지는 효과
     function menuLetterHide(){
-        $(this).find('.sub_menu').stop().animate({'opacity':0},500,"easeOutCubic");
+        $(this).find('.nav__menu__content').stop().animate({'opacity':0},500,"easeOutCubic");
     }
     
     // 메뉴 사라지는 효과
@@ -25,8 +25,8 @@ $(function(){
 
     // 효과 적용
     function InEvent(){
-        $("#menu>ul>li").on('mouseenter',menuShow);
-        $("#menu>ul>li").on('mouseleave',menuLetterHide);
+        $("#menu>div>ul>li").on('mouseenter',menuShow);
+        $("#menu>div>ul>li").on('mouseleave',menuLetterHide);
         $header.on('mouseleave',menuHide);
     }
 });
