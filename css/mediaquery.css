@@ -1,0 +1,78 @@
+@media screen and (max-width:1200px){
+    /* 퀵메뉴 */
+    #menu_icon_list{
+        top: 10px;
+    }
+    
+    #menu_icon_list li img{
+        width: 50px;
+    }
+
+    /* vision 영역 */
+    #vision_inner{
+        padding: 370px 5% 370px 5%;
+    }
+    
+    #vision_txtbox{
+        width: 48%;
+    }
+
+    /* campaign 영역 */
+    #campaign>div{
+        width: 100%;
+        height: 33.3333%;
+        float: none;
+    }
+
+    /* campaign 배경 사진 위치 조절 */
+    #campaign_01{
+        background-position-y: 10%;
+    }
+
+    #campaign_02{
+        background-position-y: 50%;
+    }
+
+    #campaign_03{
+        background-position-y: 85%;
+    }
+
+    .campaign_txtbox{
+        padding: 70px 5% 0 5%;
+        height: 180px;
+    }
+
+    .campaign_titbox{
+        width: 330px;
+        height: 150px;
+        float: left;
+    }
+
+    .campaign_btn img{
+        display: none;
+    }
+
+    .info_box{
+        bottom: -50px;
+        opacity: 0;
+        height: 130px;
+    }
+
+    .info_box p{
+        padding: 0 5%;
+    }
+
+
+    /* campaign info 박스 hover효과 */
+    #campaign>div:hover .info_box{
+        bottom: 0;
+    }
+}
+
+
+/* 980px이하 해상도부터는 모바일 버전으로 열림 */
+@media screen and (max-width:980px){
+    body,header{
+        width: 980px;
+    }
+}

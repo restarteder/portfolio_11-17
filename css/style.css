@@ -1,0 +1,146 @@
+/* 기본 설정 */
+html {
+    font-size: 1vmin;
+}
+
+body {
+    background: #fff;
+}
+
+header,
+body {
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background: rgb(182, 182, 182);
+}
+
+p,
+a,
+span {
+    color: black;
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    z-index: 99999;
+}
+
+/* header */
+.box-wrap{
+
+}
+
+#box1 {
+    text-align: center;
+    margin: auto;
+    line-height: 38px;
+    color: #fff;
+    background: #000;
+}
+
+#logo {
+    float: left;
+    width: 10%;
+    line-height: 10vmin;
+}
+
+#logo>a {}
+
+.nav-sub>ul>li>a>img {
+    height: 32px;
+}
+
+#menu {
+    padding: 0 25px;
+    height: 60px;
+    position: relative;
+    background: #fff;
+}
+
+#nav-main {
+    float: left;
+    width: 70%;
+    height: 60px;
+    text-align: center;
+}
+
+#nav-main>ul {
+    display: inline-block;
+}
+
+#nav-main>ul>li {
+    float: left;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 18px 0px;
+    margin: 0 3.7vmin;
+    background-color: #fff;
+    z-index: 10;
+}
+
+/* 네비게이션 서브 */
+
+#nav-sub-wrap{
+    position: relative;
+}
+
+.nav-sub {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translatey(30%);
+    z-index: 5;
+}
+
+.nav-sub>ul>li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+
+/* 헤더 드롭다운 */
+
+.sub_menu {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.sub_menu-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    overflow: visible;
+    left: 0;
+    width: 11vmin;
+    height: 100px;
+}
+
+.sub_menu-content a {
+    display: block;
+}
+
+.sub_menu-content li{
+    margin: 1vmin auto auto auto;
+}
+
+.sub_menu:hover .sub_menu-content {
+    display: block;
+}
+
+/* 테스트 */
+
